@@ -1,0 +1,9 @@
+       Pentru implementarea task-ului 1 informatiile sunt citite linie cu linie din fisier. Astfel, ne formam matricea si vectorul de legaturi. Ulterior matricea M este formata conform formulei data in pagina de pe Wikipedia. Astfel, in interior unei instructiuni repetitive calculam rezultatul R dupa formula “d * M * R + ((1-d)/N)*vect_of_ones” retinand rezultatul de la un pas anterior. La fiecare iteratie verificam diferenta dintre R(t+1) si R(t) cu eroarea primita ca parametru. In final functia Iterative.m va returna valoarea R.
+       Pentru implementarea task-ului 2 se folosesc aceleasi principii ca la primul task. Functia Algebraic va rezolva in final ecuatia R = d * M * R + ((1-d)/N)*vect_of_ones  prin aflarea valorii R si returnant aceasta valoare. 
+       Pentru implementarea task-ului 3 se folosesc cele doua functii “Apartenenta” si “Pagerank”. Functia Apartenenta primeste ca parametrii: “x” -  un element din vectorul sortat descrescator rezultat apelarii lui “Algebraic” si 2 valori citite din fisier. In interiorul functiei sunt aflate cele doua valori “a” si “b” pentru ca functia sa u(x) sa fie continua pe toate cele 3 ramurile. Ulterior, functia va returna o valore “y” egala cu rezultatul de pe ramura pe care se afla x. Functia PageRank formeaza un clasament al celor mai importane pagini. Astfel, algorimul intersecteaza locul obtinut, numarul paginii care a obtinut acest loc si gradul de apartenenta al acestei pagini la multimea de pagini importante. Informatiile sunt scrise intr-un fisier dat ca parametru caruia i se concateneaza “.out”, respectand cerintele de afisare.
+
+Principiile aprofundate in urma rezolvarii temei:
+- Lucrul cu fisiere (citire, scriere, concatenare nume de fisiere) 
+- Lucrul cu matrici (transpunere, completare, inversare, aflarea identitatii)
+- Modul de lucru in Octave (instructiuni, functionalitati, sintaxe)
+- Algoritmi de cautare , Fuzzy logic si conceptele Pagerank.
